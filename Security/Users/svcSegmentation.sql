@@ -1,0 +1,2 @@
+CREATE USER [svcSegmentation] WITHOUT LOGIN
+GO

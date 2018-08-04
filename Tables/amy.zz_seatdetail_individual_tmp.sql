@@ -1,0 +1,30 @@
+CREATE TABLE [amy].[zz_seatdetail_individual_tmp]
+(
+[accountnumber] [nvarchar] (36) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[categoryname] [nvarchar] (150) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[tixeventlookupid] [nvarchar] (48) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[tixeventtitleshort] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[tixeventid] [numeric] (10, 0) NULL,
+[year] [int] NULL,
+[seatpricecode] [nvarchar] (150) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[seatsection] [nvarchar] (150) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[seatrow] [nvarchar] (150) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[seatseat] [nvarchar] (150) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[tixseatid] [int] NULL,
+[tixsyspricecode] [numeric] (10, 0) NULL,
+[paid] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[sent] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[paidpercent] [numeric] (38, 19) NULL,
+[schpercent] [numeric] (38, 19) NULL,
+[ordergroupbottomlinegrandtotal] [numeric] (19, 4) NULL,
+[ordergrouptotalpaymentsonhold] [numeric] (19, 4) NULL,
+[ordergrouptotalpaymentscleared] [numeric] (19, 4) NULL,
+[update_date] [datetime] NOT NULL,
+[tixseatlastupdate] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ordernumber] [numeric] (10, 0) NULL,
+[ordergroupdate] [datetime2] (6) NULL,
+[ordergrouplastupdated] [datetime2] (6) NULL,
+[itemvalue] [numeric] (19, 4) NULL,
+[itempaid] [numeric] (19, 4) NULL
+)
+GO

@@ -1,0 +1,3 @@
+CREATE ROLE [db_SSBDeveloper]
+AUTHORIZATION [dbo]
+GO

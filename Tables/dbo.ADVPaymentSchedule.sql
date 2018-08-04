@@ -1,0 +1,41 @@
+CREATE TABLE [dbo].[ADVPaymentSchedule]
+(
+[SchedID] [int] NOT NULL,
+[SecondaryID] [int] NOT NULL,
+[ContactID] [int] NOT NULL,
+[ProgramID] [int] NOT NULL,
+[TransYear] [char] (4) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[TransGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[TransAmount] [money] NOT NULL,
+[DateOfPayment] [datetime] NOT NULL,
+[MethodOfPayment] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PaymentInstrumentId] [int] NULL,
+[AuthorizationCode] [varchar] (512) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CardNo] [varchar] (512) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CardType] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CardExpire] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BankAccount] [varchar] (512) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BankRoute] [varchar] (512) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BankName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BankAcctType] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BankAcctHolder] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BillingName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BillingAddress] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BillingCity] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BillingState] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BillingZip] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TransactionCompleted] [bit] NOT NULL,
+[ReceiptID] [int] NULL,
+[Notes_Header] [text] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Comments_LineItem] [text] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SetupBy] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RolledOver] [bit] NULL,
+[DropPaymentInstrument] [bit] NOT NULL,
+[datetimecreated] [datetime] NULL,
+[username] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[hostname] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ETL_Sync_DeltaHashKey] [binary] (32) NULL
+)
+GO
+CREATE NONCLUSTERED INDEX [nci_wi_ADVPaymentSchedule_8D9667BF710C710E57D668F9E8E408ED] ON [dbo].[ADVPaymentSchedule] ([ContactID], [TransYear], [DateOfPayment]) INCLUDE ([MethodOfPayment], [ProgramID], [TransAmount])
+GO

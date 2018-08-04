@@ -1,0 +1,31 @@
+CREATE TABLE [dbo].[DimTimeBucket]
+(
+[TimeDiff] [int] NOT NULL,
+[Bucket5] [int] NULL,
+[Bucket5Desc] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bucket10] [int] NULL,
+[Bucket10Desc] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bucket15] [int] NULL,
+[Bucket15Desc] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bucket20] [int] NULL,
+[Bucket20Desc] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bucket25] [int] NULL,
+[Bucket25Desc] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bucket30] [int] NULL,
+[Bucket30Desc] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bucket50] [int] NULL,
+[Bucket50Desc] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bucket60] [int] NULL,
+[Bucket60Desc] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bucket90] [int] NULL,
+[Bucket90Desc] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bucket100] [int] NULL,
+[Bucket100Desc] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bucket120] [int] NULL,
+[Bucket120Desc] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bucket150] [int] NULL,
+[Bucket150Desc] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bucket180] [int] NULL,
+[Bucket180Desc] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO

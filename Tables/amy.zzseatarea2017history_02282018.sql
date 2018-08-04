@@ -1,0 +1,32 @@
+CREATE TABLE [amy].[zzseatarea2017history_02282018]
+(
+[SeatAreaID] [int] NOT NULL IDENTITY(1, 1),
+[SeatAreaName] [varchar] (150) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[locationID] [int] NOT NULL,
+[SportType] [varchar] (150) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SeatCount] [int] NULL,
+[CreateDate] [datetime] NULL,
+[CreateUser] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[UpdateDate] [datetime] NULL,
+[UpdateUser] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SeatingType] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CAP_Amount] [money] NULL,
+[Annual_Amount] [money] NULL,
+[Seats_included] [int] NULL,
+[TermPre06012014] [int] NULL,
+[TermPost06012014] [int] NULL,
+[TicketPrice] [int] NULL,
+[SeatRegionName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SeatRegionID] [int] NULL,
+[sportid] [int] NULL,
+[seatareacode] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Ticket_Amount] [money] NULL,
+[ballenapricelevel] [int] NULL,
+[Neighborhood] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[premium_ind] [bit] NULL,
+[tixsyspriceleveldesc] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[tixsyspricelevelcode] [int] NULL,
+[ticketpricewofee] [money] NULL,
+[fundingreportid] [int] NULL
+)
+GO

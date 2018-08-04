@@ -1,0 +1,2 @@
+CREATE USER [svcReport] WITHOUT LOGIN
+GO

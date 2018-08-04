@@ -1,0 +1,5 @@
+CREATE SCHEMA [mdm]
+AUTHORIZATION [dbo]
+GO
+GRANT SELECT ON SCHEMA:: [mdm] TO [ajoyce]
+GO

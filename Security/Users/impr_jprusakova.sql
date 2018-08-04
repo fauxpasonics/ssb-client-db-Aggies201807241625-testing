@@ -1,0 +1,2 @@
+CREATE USER [impr_jprusakova] WITHOUT LOGIN
+GO

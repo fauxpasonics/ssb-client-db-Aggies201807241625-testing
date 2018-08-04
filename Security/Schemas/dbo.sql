@@ -1,0 +1,8 @@
+GRANT SELECT ON SCHEMA:: [dbo] TO [ajoyce]
+GO
+GRANT SELECT ON SCHEMA:: [dbo] TO [ctaylor]
+GO
+GRANT EXECUTE ON SCHEMA:: [dbo] TO [db_apiETL]
+GO
+GRANT SELECT ON SCHEMA:: [dbo] TO [db_apiETL]
+GO

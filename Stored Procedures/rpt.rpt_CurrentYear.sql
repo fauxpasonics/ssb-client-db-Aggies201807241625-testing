@@ -1,0 +1,8 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [rpt].[rpt_CurrentYear] AS
+
+SELECT CurrentYear FROM dbo.ADVCurrentYear
+GO

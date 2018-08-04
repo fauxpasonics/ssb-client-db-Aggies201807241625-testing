@@ -1,0 +1,6 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE VIEW [dbo].[vw_prodcopy_Contact] AS SELECT  Id, IsDeleted, MasterRecordId, AccountId, LastName, FirstName, Salutation, Name, OtherStreet, OtherCity, OtherState, OtherPostalCode, OtherCountry, OtherLatitude, OtherLongitude, OtherGeocodeAccuracy, OtherAddress, MailingStreet, MailingCity, MailingState, MailingPostalCode, MailingCountry, MailingLatitude, MailingLongitude, MailingGeocodeAccuracy, MailingAddress, Phone, Fax, MobilePhone, HomePhone, OtherPhone, AssistantPhone, ReportsToId, Email, Title, Department, AssistantName, LeadSource, Birthdate, Description, OwnerId, CreatedDate, CreatedById, LastModifiedDate, LastModifiedById, SystemModstamp, LastActivityDate, LastCURequestDate, LastCUUpdateDate, LastViewedDate, LastReferencedDate, EmailBouncedReason, EmailBouncedDate, IsEmailBounced, PhotoUrl, Jigsaw, JigsawContactId, IsPersonAccount, Full_Contact_ID__c, Inactive__c, School_Alum_Spouse__c, School_Alum__c, School_Grad_Year_Spouse__c, School_Grad_Year__c, School_Student_Athlete_Spouse__c, School_Student_Athlete__c, Secondary_Email__c, MiddleName, Suffix, DoNotCall, Adobe_Opt_Out__c, Adobe_Quarantine__c, Age__c, Last_Quarantine_Validation__c, Total_Quarantines__c, copyloaddate, ETL_Sync_DeltaHashKey FROM prodcopy.Contact;
+GO

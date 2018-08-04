@@ -1,0 +1,42 @@
+CREATE TABLE [ods].[PAC_PaymentSchedule]
+(
+[OrganizationID] [nvarchar] (32) COLLATE SQL_Latin1_General_CP1_CS_AS NOT NULL,
+[AccountID] [nvarchar] (32) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[PaymentScheduleID] [bigint] NOT NULL,
+[PayCodeID] [nvarchar] (32) COLLATE SQL_Latin1_General_CP1_CS_AS NULL,
+[PayCodeOrgID] [nvarchar] (32) COLLATE SQL_Latin1_General_CP1_CS_AS NULL,
+[ScheduleTypeCodeDbID] [nvarchar] (32) COLLATE SQL_Latin1_General_CP1_CS_AS NULL,
+[ScheduleTypeCodeType] [nvarchar] (32) COLLATE SQL_Latin1_General_CP1_CS_AS NULL,
+[ScheduleTypeCodeSubtype] [nvarchar] (32) COLLATE SQL_Latin1_General_CP1_CS_AS NULL,
+[ScheduleTypeCode] [nvarchar] (64) COLLATE SQL_Latin1_General_CP1_CS_AS NULL,
+[IsBankAccountPreferred] [bit] NULL,
+[Institution] [nvarchar] (256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BankAccountNickName] [nvarchar] (256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BankAccountHolderFirstName] [nvarchar] (256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BankAccountHolderLastName] [nvarchar] (256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RoutingNumber] [nvarchar] (32) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BankAccountNumber] [nvarchar] (4) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IsCreditCardPreferred] [int] NULL,
+[NameOnCard] [nvarchar] (256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CreditCardNickName] [nvarchar] (256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CreditCardNumber] [nvarchar] (4) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ExpirationMonth] [int] NULL,
+[ExpirationYear] [int] NULL,
+[ReceiptedDonorAccountId] [nvarchar] (32) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastUsed] [datetime] NULL,
+[SourceCodeDbID] [nvarchar] (32) COLLATE SQL_Latin1_General_CP1_CS_AS NULL,
+[SourceCodeType] [nvarchar] (32) COLLATE SQL_Latin1_General_CP1_CS_AS NULL,
+[SourceCodeSubtype] [nvarchar] (32) COLLATE SQL_Latin1_General_CP1_CS_AS NULL,
+[SourceCode] [nvarchar] (64) COLLATE SQL_Latin1_General_CP1_CS_AS NULL,
+[sys_CreateIP] [nvarchar] (64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[sys_CreateTS] [datetime] NULL,
+[sys_CreateUser] [nvarchar] (256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[sys_Status] [int] NULL,
+[sys_UpdateIP] [nvarchar] (64) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[sys_UpdateTS] [datetime] NULL,
+[sys_UpdateUser] [nvarchar] (256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ETL_Sync_DeltaHashKey] [binary] (32) NULL
+)
+GO
+CREATE CLUSTERED COLUMNSTORE INDEX [CCI_ods__PAC_PaymentSchedule] ON [ods].[PAC_PaymentSchedule]
+GO

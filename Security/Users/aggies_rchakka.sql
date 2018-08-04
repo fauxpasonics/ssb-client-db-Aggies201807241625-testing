@@ -1,0 +1,2 @@
+CREATE USER [aggies_rchakka] WITHOUT LOGIN
+GO

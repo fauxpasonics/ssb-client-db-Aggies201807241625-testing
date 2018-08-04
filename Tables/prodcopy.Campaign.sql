@@ -1,0 +1,42 @@
+CREATE TABLE [prodcopy].[Campaign]
+(
+[Id] [nvarchar] (18) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[IsDeleted] [bit] NULL,
+[Name] [nvarchar] (80) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ParentId] [nvarchar] (18) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Type] [nvarchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Status] [nvarchar] (40) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[StartDate] [date] NULL,
+[EndDate] [date] NULL,
+[ExpectedRevenue] [float] NULL,
+[BudgetedCost] [float] NULL,
+[ActualCost] [float] NULL,
+[ExpectedResponse] [float] NULL,
+[NumberSent] [float] NULL,
+[IsActive] [bit] NULL,
+[Description] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NumberOfLeads] [int] NULL,
+[NumberOfConvertedLeads] [int] NULL,
+[NumberOfContacts] [int] NULL,
+[NumberOfResponses] [int] NULL,
+[NumberOfOpportunities] [int] NULL,
+[NumberOfWonOpportunities] [int] NULL,
+[AmountAllOpportunities] [float] NULL,
+[AmountWonOpportunities] [float] NULL,
+[OwnerId] [nvarchar] (18) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CreatedDate] [datetime] NULL,
+[CreatedById] [nvarchar] (18) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastModifiedDate] [datetime] NULL,
+[LastModifiedById] [nvarchar] (18) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SystemModstamp] [datetime] NULL,
+[LastActivityDate] [date] NULL,
+[LastViewedDate] [datetime] NULL,
+[LastReferencedDate] [datetime] NULL,
+[CampaignMemberRecordTypeId] [nvarchar] (18) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Full_Campaign_ID__c] [nvarchar] (1300) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[copyloaddate] [datetime] NULL,
+[ETL_Sync_DeltaHashKey] [binary] (32) NULL
+)
+GO
+ALTER TABLE [prodcopy].[Campaign] ADD CONSTRAINT [PK__Campaign__3214EC0777EE061E] PRIMARY KEY CLUSTERED  ([Id])
+GO

@@ -1,0 +1,9 @@
+CREATE SCHEMA [rpt]
+AUTHORIZATION [svcETL]
+GO
+GRANT SELECT ON SCHEMA:: [rpt] TO [ajoyce]
+GO
+GRANT EXECUTE ON SCHEMA:: [rpt] TO [ajoyce]
+GO
+GRANT SELECT ON SCHEMA:: [rpt] TO [ctaylor]
+GO

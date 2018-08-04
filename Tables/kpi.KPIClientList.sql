@@ -1,0 +1,10 @@
+CREATE TABLE [kpi].[KPIClientList]
+(
+[KCLID] [int] NOT NULL,
+[ClientID] [int] NULL,
+[KPIID] [int] NULL,
+[Enabled] [bit] NULL
+)
+GO
+ALTER TABLE [kpi].[KPIClientList] ADD CONSTRAINT [PK__KPIClien__050326F81A0EA53E] PRIMARY KEY CLUSTERED  ([KCLID])
+GO

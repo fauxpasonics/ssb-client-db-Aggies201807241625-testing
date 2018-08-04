@@ -1,0 +1,30 @@
+CREATE TABLE [src].[VTXtixsyspricecodes]
+(
+[ETL_ID] [int] NOT NULL,
+[ETL_CreatedDate] [datetime] NOT NULL,
+[ETL_SourceFileName] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[tixsyspricecodecode] [numeric] (10, 0) NULL,
+[tixsyspricecodedesc] [nvarchar] (150) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[tixsyspricecodeinitdate] [datetime2] (6) NULL,
+[tixsyspricecodelastupdwhen] [datetime2] (6) NULL,
+[tixsyspricecodelastupdatewho] [nvarchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[tixsyspricecodecolors] [nvarchar] (192) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[tixsyspricecodetype] [numeric] (10, 0) NULL,
+[tixsyspricecodemodatnextlevel] [smallint] NULL,
+[tixsyspricecodetextdesc] [nvarchar] (9) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[tixsyspricecodedispord] [smallint] NULL,
+[tixsyspricecodesalesmodes] [smallint] NULL,
+[tixsyscompseatstatuscode] [smallint] NULL,
+[tixsyspricecodealtprintdesc] [nvarchar] (90) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[printable] [smallint] NULL,
+[is_comp] [smallint] NULL,
+[tixsyspricecodepaypri] [int] NULL,
+[tixsyspricecodepricingmode] [int] NULL,
+[restrict_transfer] [smallint] NULL,
+[restrict_resale] [smallint] NULL,
+[waive_first_seller_fee] [smallint] NULL,
+[stadis_active] [smallint] NULL,
+[hidden_status] [smallint] NULL,
+[restrict_transfer_to_fs] [smallint] NULL
+)
+GO

@@ -1,0 +1,30 @@
+CREATE TABLE [dbo].[MailChimpExport]
+(
+[EMAIL_ADDRESS] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FIRST_NAME] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LAST_NAME] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[STATUS] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ACCOUNTNAME] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FB_PARKING_LOT] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FB_PARKING_ROW] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FB_PARKING_SEAT] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DONOR_GROUPS] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[UPDATE_YOUR_PREFERENCES] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MEMBER_RATING] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[OPTIN_TIME] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[OPTIN_IP] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CONFIRM_TIME] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CONFIRM_IP] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LATITUDE] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LONGITUDE] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[GMTOFF] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DSTOFF] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TIMEZONE] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CC] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[REGION] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LAST_CHANGED] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LEID] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EUID] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NOTES] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO
